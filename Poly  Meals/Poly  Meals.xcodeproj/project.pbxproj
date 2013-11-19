@@ -20,7 +20,6 @@
 		B995DE921822F38100E4F7F7 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B995DE911822F38100E4F7F7 /* Security.framework */; };
 		B995DE941822F38600E4F7F7 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B995DE931822F38600E4F7F7 /* StoreKit.framework */; };
 		B995DE961822F39300E4F7F7 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B995DE951822F39300E4F7F7 /* SystemConfiguration.framework */; };
-		B9ED95551835735E002F94F5 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9ED95541835735E002F94F5 /* Parse.framework */; };
 		D8AD65D21819B4F70036EBEF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D8AD65D11819B4F70036EBEF /* Foundation.framework */; };
 		D8AD65D41819B4F70036EBEF /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D8AD65D31819B4F70036EBEF /* CoreGraphics.framework */; };
 		D8AD65D61819B4F70036EBEF /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D8AD65D51819B4F70036EBEF /* UIKit.framework */; };
@@ -36,6 +35,7 @@
 		D8AD66001819B4F70036EBEF /* Poly__MealsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D8AD65FF1819B4F70036EBEF /* Poly__MealsTests.m */; };
 		D8AD660A1819B53E0036EBEF /* Main_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D8AD66091819B53E0036EBEF /* Main_iPhone.storyboard */; };
 		D8C421F81822EA760092F686 /* TimeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D8C421F71822EA760092F686 /* TimeViewController.m */; };
+		D8D59588183C009900D21045 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D8D59587183C009900D21045 /* Parse.framework */; };
 		D8E0E4CA18271FF900DF8F88 /* MenuTableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D8E0E4C918271FF900DF8F88 /* MenuTableCell.m */; };
 /* End PBXBuildFile section */
 
@@ -88,6 +88,7 @@
 		D8AD66091819B53E0036EBEF /* Main_iPhone.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main_iPhone.storyboard; sourceTree = "<group>"; };
 		D8C421F61822EA760092F686 /* TimeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TimeViewController.h; sourceTree = "<group>"; };
 		D8C421F71822EA760092F686 /* TimeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TimeViewController.m; sourceTree = "<group>"; };
+		D8D59587183C009900D21045 /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Parse.framework; path = ../../Parse.framework; sourceTree = "<group>"; };
 		D8E0E4C518271FD000DF8F88 /* MenuTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MenuTableViewController.h; sourceTree = "<group>"; };
 		D8E0E4C818271FF900DF8F88 /* MenuTableCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MenuTableCell.h; sourceTree = "<group>"; };
 		D8E0E4C918271FF900DF8F88 /* MenuTableCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MenuTableCell.m; sourceTree = "<group>"; };
@@ -98,13 +99,13 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D8D59588183C009900D21045 /* Parse.framework in Frameworks */,
 				B995DE961822F39300E4F7F7 /* SystemConfiguration.framework in Frameworks */,
 				B995DE941822F38600E4F7F7 /* StoreKit.framework in Frameworks */,
 				B995DE921822F38100E4F7F7 /* Security.framework in Frameworks */,
 				B995DE901822F37600E4F7F7 /* QuartzCore.framework in Frameworks */,
 				B995DE8E1822F34B00E4F7F7 /* MobileCoreServices.framework in Frameworks */,
 				B995DE8C1822F33D00E4F7F7 /* libz.1.1.3.dylib in Frameworks */,
-				B9ED95551835735E002F94F5 /* Parse.framework in Frameworks */,
 				B995DE8A1822F33400E4F7F7 /* CoreLocation.framework in Frameworks */,
 				D8AD65D41819B4F70036EBEF /* CoreGraphics.framework in Frameworks */,
 				B995DE881822F32100E4F7F7 /* CFNetwork.framework in Frameworks */,
@@ -149,6 +150,7 @@
 		D8AD65D01819B4F70036EBEF /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				D8D59587183C009900D21045 /* Parse.framework */,
 				B9ED95541835735E002F94F5 /* Parse.framework */,
 				B995DE951822F39300E4F7F7 /* SystemConfiguration.framework */,
 				B995DE931822F38600E4F7F7 /* StoreKit.framework */,
@@ -462,6 +464,7 @@
 					/Users/zachzhang/Downloads,
 					/Users/BrianGouldsberry/Downloads,
 					"/Users/BrianGouldsberry/Downloads/Poly-Meals/Poly\\ \\ Meals",
+					/Users/nweitz/Desktop,
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Poly  Meals/Poly  Meals-Prefix.pch";
@@ -482,6 +485,7 @@
 					/Users/zachzhang/Downloads,
 					/Users/BrianGouldsberry/Downloads,
 					"/Users/BrianGouldsberry/Downloads/Poly-Meals/Poly\\ \\ Meals",
+					/Users/nweitz/Desktop,
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Poly  Meals/Poly  Meals-Prefix.pch";
