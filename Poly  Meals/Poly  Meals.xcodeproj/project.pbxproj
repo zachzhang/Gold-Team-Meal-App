@@ -67,7 +67,6 @@
 		B995DE911822F38100E4F7F7 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		B995DE931822F38600E4F7F7 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
 		B995DE951822F39300E4F7F7 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
-		B9ED95541835735E002F94F5 /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
 		D8AD65CE1819B4F70036EBEF /* Poly  Meals.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Poly  Meals.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D8AD65D11819B4F70036EBEF /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		D8AD65D31819B4F70036EBEF /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -151,7 +150,6 @@
 			isa = PBXGroup;
 			children = (
 				D8D59587183C009900D21045 /* Parse.framework */,
-				B9ED95541835735E002F94F5 /* Parse.framework */,
 				B995DE951822F39300E4F7F7 /* SystemConfiguration.framework */,
 				B995DE931822F38600E4F7F7 /* StoreKit.framework */,
 				B995DE911822F38100E4F7F7 /* Security.framework */,
@@ -460,11 +458,7 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"/Users/BrianGouldsberry/Documents/Brian/school/PolyMeal/Poly\\ \\ Meals",
-					/Users/zachzhang/Downloads,
-					/Users/BrianGouldsberry/Downloads,
-					"/Users/BrianGouldsberry/Downloads/Poly-Meals/Poly\\ \\ Meals",
-					/Users/nweitz/Desktop,
+					"$(PROJECT_DIR)",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Poly  Meals/Poly  Meals-Prefix.pch";
@@ -481,11 +475,7 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"/Users/BrianGouldsberry/Documents/Brian/school/PolyMeal/Poly\\ \\ Meals",
-					/Users/zachzhang/Downloads,
-					/Users/BrianGouldsberry/Downloads,
-					"/Users/BrianGouldsberry/Downloads/Poly-Meals/Poly\\ \\ Meals",
-					/Users/nweitz/Desktop,
+					"$(PROJECT_DIR)",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Poly  Meals/Poly  Meals-Prefix.pch";
