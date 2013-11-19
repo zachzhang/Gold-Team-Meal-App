@@ -11,6 +11,7 @@
 		633A8CBE1832ACE400AD9F1A /* RestrauntViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 633A8CBD1832ACE400AD9F1A /* RestrauntViewController.m */; };
 		633A8CC11834161A00AD9F1A /* ItemTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 633A8CC01834161A00AD9F1A /* ItemTableViewController.m */; };
 		6355D1441834625900A96A48 /* MenuTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6355D1431834625900A96A48 /* MenuTableViewController.m */; };
+		9CC43DD3183BFF8000E89C87 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9ED95541835735E002F94F5 /* Parse.framework */; };
 		B995DE861822F31800E4F7F7 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B995DE851822F31800E4F7F7 /* AudioToolbox.framework */; };
 		B995DE881822F32100E4F7F7 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B995DE871822F32100E4F7F7 /* CFNetwork.framework */; };
 		B995DE8A1822F33400E4F7F7 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B995DE891822F33400E4F7F7 /* CoreLocation.framework */; };
@@ -20,7 +21,6 @@
 		B995DE921822F38100E4F7F7 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B995DE911822F38100E4F7F7 /* Security.framework */; };
 		B995DE941822F38600E4F7F7 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B995DE931822F38600E4F7F7 /* StoreKit.framework */; };
 		B995DE961822F39300E4F7F7 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B995DE951822F39300E4F7F7 /* SystemConfiguration.framework */; };
-		B9ED95551835735E002F94F5 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9ED95541835735E002F94F5 /* Parse.framework */; };
 		D8AD65D21819B4F70036EBEF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D8AD65D11819B4F70036EBEF /* Foundation.framework */; };
 		D8AD65D41819B4F70036EBEF /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D8AD65D31819B4F70036EBEF /* CoreGraphics.framework */; };
 		D8AD65D61819B4F70036EBEF /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D8AD65D51819B4F70036EBEF /* UIKit.framework */; };
@@ -104,7 +104,7 @@
 				B995DE901822F37600E4F7F7 /* QuartzCore.framework in Frameworks */,
 				B995DE8E1822F34B00E4F7F7 /* MobileCoreServices.framework in Frameworks */,
 				B995DE8C1822F33D00E4F7F7 /* libz.1.1.3.dylib in Frameworks */,
-				B9ED95551835735E002F94F5 /* Parse.framework in Frameworks */,
+				9CC43DD3183BFF8000E89C87 /* Parse.framework in Frameworks */,
 				B995DE8A1822F33400E4F7F7 /* CoreLocation.framework in Frameworks */,
 				D8AD65D41819B4F70036EBEF /* CoreGraphics.framework in Frameworks */,
 				B995DE881822F32100E4F7F7 /* CFNetwork.framework in Frameworks */,
@@ -462,6 +462,7 @@
 					/Users/zachzhang/Downloads,
 					/Users/BrianGouldsberry/Downloads,
 					"/Users/BrianGouldsberry/Downloads/Poly-Meals/Poly\\ \\ Meals",
+					"/Users/jprovaze/Desktop/Gold-Team-Meal-App/Poly\\ \\ Meals",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Poly  Meals/Poly  Meals-Prefix.pch";
@@ -482,6 +483,7 @@
 					/Users/zachzhang/Downloads,
 					/Users/BrianGouldsberry/Downloads,
 					"/Users/BrianGouldsberry/Downloads/Poly-Meals/Poly\\ \\ Meals",
+					"/Users/jprovaze/Desktop/Gold-Team-Meal-App/Poly\\ \\ Meals",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Poly  Meals/Poly  Meals-Prefix.pch";
