@@ -11,4 +11,5 @@
 @interface MenuTableViewController : UITableViewController
 @property NSString *subName;
 @property NSNumber *total;
+@property NSMutableArray *cart;
 @end

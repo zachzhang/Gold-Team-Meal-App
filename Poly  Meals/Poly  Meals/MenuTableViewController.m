@@ -9,9 +9,13 @@
 #import "MenuTableViewController.h"
 #import "MenuTableCell.h"
 #import "Parse/Parse.h"
+#import "SelectedViewController.h"
 @interface MenuTableViewController ()
 @property (weak, nonatomic) IBOutlet UIBarButtonItem *totalLabel;
+@property (weak, nonatomic) IBOutlet UIBarButtonItem *passedTotalLabel;
 @property NSArray *allItems;
+@property NSMutableArray *selectedItems;
+@property double mealPrice;
 @property double totalCost;
 @end
 
@@ -29,9 +33,13 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    NSString *name = self.subName;
+    self.selectedItems = [[NSMutableArray alloc] init];
+    NSString *slash = @"/  ";
+    self.mealPrice = [self.total doubleValue];
+    NSString *mealTotal = [slash stringByAppendingString:[NSString stringWithFormat:@"%.2f", self.mealPrice]];
+    self.passedTotalLabel.title = mealTotal;
     PFQuery *query = [PFQuery queryWithClassName:@"allData"];
-    [query whereKey:@"subRestaurant" equalTo:name];
+    [query whereKey:@"subRestaurant" equalTo:self.subName];
     [query findObjectsInBackgroundWithTarget:self
                                     selector:@selector(saveParseArr:error:)];
 
@@ -49,15 +57,12 @@
     [self.tableView reloadData];
 }
 
-- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)index
+- (void) tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)index
 {
     MenuTableCell *cell = [tableView cellForRowAtIndexPath:index];
-    NSNumberFormatter *nf = [[NSNumberFormatter alloc] init];
-    [nf setNumberStyle:NSNumberFormatterCurrencyStyle];
-    double d = [[nf numberFromString: cell.foodPrice.text] doubleValue];
-    self.totalCost += d;
-    NSString *dollar = @"$";
-    self.totalLabel.title = [dollar stringByAppendingString:[NSString stringWithFormat:@"%.2f", self.totalCost]];
+    NSDictionary *cellDict = @{@"Name": cell.foodName.text, @"Price": cell.foodPrice.text};
+    [self.selectedItems addObject:cellDict];
+    [self totalItemValues];
     NSNumber *quant = @([cell.quantity.text intValue] + 1);
     cell.quantity.text = [quant stringValue];
     
@@ -150,16 +155,21 @@
 }
 */
 
-/*
-#pragma mark - Navigation
 
 // In a story board-based application, you will often want to do a little preparation before navigation
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
     // Get the new view controller using [segue destinationViewController].
     // Pass the selected object to the new view controller.
+    if([segue.identifier isEqualToString:@"cartSegue"]){
+        SelectedViewController *restObj = segue.destinationViewController;
+        NSSortDescriptor *descriptor = [[NSSortDescriptor alloc] initWithKey:@"Name"  ascending:YES];
+        [self.selectedItems sortUsingDescriptors:[NSArray arrayWithObjects:descriptor,nil]];
+        restObj.shoppingCart = self.selectedItems;
+    }
+
+    
 }
 
- */
 
 @end
