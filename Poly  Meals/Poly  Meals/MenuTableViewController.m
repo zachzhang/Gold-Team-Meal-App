@@ -61,6 +61,17 @@
     NSNumber *quant = @([cell.quantity.text intValue] + 1);
     cell.quantity.text = [quant stringValue];
     
+    
+      NSNumber *priceGray = self.allItems[index.row][@"foodPrice"];
+    
+    if ([priceGray doubleValue] < 10.75) {
+        
+         cell.foodPrice.textColor = [UIColor grayColor];
+     
+        
+    }
+    
+    
 }
 
 
@@ -95,6 +106,8 @@
     cell.foodName.text = self.allItems[indexPath.row][@"foodName"];
     cell.foodPrice.text = [priceLabel stringByAppendingString: [self.allItems[indexPath.row][@"foodPrice"] stringValue]];
     cell.quantity.text = quant;
+    
+    
     return cell;
 }
 
