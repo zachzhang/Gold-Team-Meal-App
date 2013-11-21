@@ -20,6 +20,8 @@
 		B995DE921822F38100E4F7F7 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B995DE911822F38100E4F7F7 /* Security.framework */; };
 		B995DE941822F38600E4F7F7 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B995DE931822F38600E4F7F7 /* StoreKit.framework */; };
 		B995DE961822F39300E4F7F7 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B995DE951822F39300E4F7F7 /* SystemConfiguration.framework */; };
+		B9B56D67183C771300260502 /* SelectedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B9B56D66183C771300260502 /* SelectedViewController.m */; };
+		B9B56D6A183C7B7C00260502 /* SelectedCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B9B56D69183C7B7C00260502 /* SelectedCell.m */; };
 		B9ED95551835735E002F94F5 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9ED95541835735E002F94F5 /* Parse.framework */; };
 		D8AD65D21819B4F70036EBEF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D8AD65D11819B4F70036EBEF /* Foundation.framework */; };
 		D8AD65D41819B4F70036EBEF /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D8AD65D31819B4F70036EBEF /* CoreGraphics.framework */; };
@@ -67,6 +69,10 @@
 		B995DE911822F38100E4F7F7 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		B995DE931822F38600E4F7F7 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
 		B995DE951822F39300E4F7F7 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		B9B56D65183C771300260502 /* SelectedViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SelectedViewController.h; sourceTree = "<group>"; };
+		B9B56D66183C771300260502 /* SelectedViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SelectedViewController.m; sourceTree = "<group>"; };
+		B9B56D68183C7B7C00260502 /* SelectedCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SelectedCell.h; sourceTree = "<group>"; };
+		B9B56D69183C7B7C00260502 /* SelectedCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SelectedCell.m; sourceTree = "<group>"; };
 		B9ED95541835735E002F94F5 /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
 		D8AD65CE1819B4F70036EBEF /* Poly  Meals.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Poly  Meals.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D8AD65D11819B4F70036EBEF /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -178,6 +184,10 @@
 				D8AD66091819B53E0036EBEF /* Main_iPhone.storyboard */,
 				633A8CBF1834161A00AD9F1A /* ItemTableViewController.h */,
 				633A8CC01834161A00AD9F1A /* ItemTableViewController.m */,
+				B9B56D65183C771300260502 /* SelectedViewController.h */,
+				B9B56D66183C771300260502 /* SelectedViewController.m */,
+				B9B56D68183C7B7C00260502 /* SelectedCell.h */,
+				B9B56D69183C7B7C00260502 /* SelectedCell.m */,
 				633A8CBC1832ACE400AD9F1A /* RestrauntViewController.h */,
 				633A8CBD1832ACE400AD9F1A /* RestrauntViewController.m */,
 				D8E0E4C518271FD000DF8F88 /* MenuTableViewController.h */,
@@ -323,10 +333,12 @@
 				6355D1441834625900A96A48 /* MenuTableViewController.m in Sources */,
 				D8C421F81822EA760092F686 /* TimeViewController.m in Sources */,
 				D8AD65E21819B4F70036EBEF /* AppDelegate.m in Sources */,
+				B9B56D67183C771300260502 /* SelectedViewController.m in Sources */,
 				633A8CC11834161A00AD9F1A /* ItemTableViewController.m in Sources */,
 				633A8CBE1832ACE400AD9F1A /* RestrauntViewController.m in Sources */,
 				D8AD65DE1819B4F70036EBEF /* main.m in Sources */,
 				633A8CBB1832A96300AD9F1A /* SubRestrauntViewController.m in Sources */,
+				B9B56D6A183C7B7C00260502 /* SelectedCell.m in Sources */,
 				D8E0E4CA18271FF900DF8F88 /* MenuTableCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
