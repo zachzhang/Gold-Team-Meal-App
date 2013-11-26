@@ -65,18 +65,27 @@
     [self totalItemValues];
     NSNumber *quant = @([cell.quantity.text intValue] + 1);
     cell.quantity.text = [quant stringValue];
-    
-    
-      NSNumber *priceGray = self.allItems[index.row][@"foodPrice"];
-    
-    if ([priceGray doubleValue] < 10.75) {
-        
+    NSNumber *priceGray = self.allItems[index.row][@"foodPrice"];
+    if ([priceGray doubleValue] > [self.total doubleValue]) {
          cell.foodPrice.textColor = [UIColor grayColor];
-     
-        
     }
-    
-    
+}
+
+-(void) totalItemValues
+{
+    self.totalCost = 0;
+    for (id object in self.selectedItems)
+    {
+        NSNumberFormatter *nf = [[NSNumberFormatter alloc] init];
+        [nf setNumberStyle:NSNumberFormatterCurrencyStyle];
+        double d = [[nf numberFromString: object[@"Price"]] doubleValue];
+        self.totalCost += d;
+        NSString *dollar = @"$";
+        self.totalLabel.title = [dollar stringByAppendingString:[NSString stringWithFormat:@"%.2f", self.totalCost]];
+    }
+    if (self.totalCost > self.mealPrice){
+        self.totalLabel.tintColor = [UIColor redColor];
+    }
 }
 
 
