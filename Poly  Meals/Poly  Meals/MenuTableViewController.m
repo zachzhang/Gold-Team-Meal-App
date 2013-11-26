@@ -66,9 +66,11 @@
     NSNumber *quant = @([cell.quantity.text intValue] + 1);
     cell.quantity.text = [quant stringValue];
     NSNumber *priceGray = self.allItems[index.row][@"foodPrice"];
-    if ([priceGray doubleValue] > [self.total doubleValue]) {
+    
+    if ([priceGray doubleValue] > self.mealPrice - self.totalCost) {
          cell.foodPrice.textColor = [UIColor grayColor];
     }
+    //[self.tableView reloadData];
 }
 
 -(void) totalItemValues
@@ -85,7 +87,10 @@
     }
     if (self.totalCost > self.mealPrice){
         self.totalLabel.tintColor = [UIColor redColor];
+       
     }
+    
+    
 }
 
 
@@ -121,7 +126,12 @@
     cell.foodPrice.text = [priceLabel stringByAppendingString: [self.allItems[indexPath.row][@"foodPrice"] stringValue]];
     cell.quantity.text = quant;
     
+    NSNumber *priceGray = self.allItems[indexPath.row][@"foodPrice"];
     
+    if ([priceGray doubleValue] > self.mealPrice - self.totalCost) {
+        cell.foodPrice.textColor = [UIColor grayColor];
+    }
+
     return cell;
 }
 
