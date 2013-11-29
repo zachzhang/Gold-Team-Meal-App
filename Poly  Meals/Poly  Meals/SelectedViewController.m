@@ -11,7 +11,6 @@
 #import "MenuTableViewController.h"
 
 @interface SelectedViewController ()
-
 @end
 
 @implementation SelectedViewController
@@ -34,6 +33,11 @@
  
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
      self.navigationItem.rightBarButtonItem = self.editButtonItem;
+}
+
+-(NSMutableArray *)getItems
+{
+    return self.shoppingCart;
 }
 
 - (void)didReceiveMemoryWarning
@@ -106,22 +110,6 @@
     return YES;
 }
 */
-
-
-#pragma mark - Navigation
-
-// In a story board-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
-{
-    if([segue.identifier isEqualToString:@"cartSegue"]){
-        MenuTableViewController *restObj = segue.destinationViewController;
-        NSSortDescriptor *descriptor = [[NSSortDescriptor alloc] initWithKey:@"Name"  ascending:YES];
-        [self.shoppingCart sortUsingDescriptors:[NSArray arrayWithObjects:descriptor,nil]];
-        restObj.cart = self.shoppingCart;
-        NSLog(@"%@", @"sdjnkds");
-    }
-
-}
 
 
 @end

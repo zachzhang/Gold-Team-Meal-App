@@ -7,6 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "MenuTableViewController.h"
+
 
 @interface SelectedViewController : UITableViewController
 @property NSMutableArray *shoppingCart;
