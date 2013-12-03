@@ -7,8 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "SelectedViewController.h"
 
-@interface MenuTableViewController : UITableViewController
+@interface MenuTableViewController : UITableViewController 
 @property NSString *subName;
 @property NSNumber *total;
 @property NSMutableArray *cart;

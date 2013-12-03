@@ -1556,10 +1556,6 @@
                                             <color key="textColor" red="0.90459582270000005" green="0.64391226239999999" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="r4y-fF-D8K">
-                                            <rect key="frame" x="264" y="2" width="36" height="36"/>
-                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        </imageView>
                                         <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Menu Item" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SdA-Yb-y05">
                                             <rect key="frame" x="10" y="2" width="230" height="21"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -1580,9 +1576,16 @@
                             <outlet property="delegate" destination="KGS-yd-dP3" id="Qi3-eo-ogX"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="l3E-mf-RR1"/>
+                    <navigationItem key="navigationItem" id="l3E-mf-RR1">
+                        <barButtonItem key="leftBarButtonItem" title="Back" id="NPM-uW-xbk">
+                            <connections>
+                                <segue destination="tF8-Mf-ZMZ" kind="unwind" unwindAction="unwindToMenuTable:" id="zxe-yI-5qk"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zPv-0f-uf2" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="tF8-Mf-ZMZ" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="1342" y="151"/>
         </scene>
